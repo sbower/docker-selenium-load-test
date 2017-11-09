@@ -1,4 +1,4 @@
-version: '2'
+version: '3.4'
 services:
   hub:
     image: selenium/hub:2.53.0
@@ -20,6 +20,7 @@ services:
 networks:
   selenium:
     driver: overlay
+    attachable: true
     ipam:
       config:
         - subnet: 10.0.0.0/24
