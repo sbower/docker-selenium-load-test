@@ -12,8 +12,6 @@ services:
     image: sbower/node-firefox:2.53.0
     networks:
       - selenium
-    links:
-      - hub
     environment:
       - HUB_PORT_4444_TCP_ADDR=hub
       - HUB_PORT_4444_TCP_PORT=4444
